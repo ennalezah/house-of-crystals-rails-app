@@ -26,6 +26,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 gem 'bootstrap', '~> 4.4', '>= 4.4.1'
+gem 'jquery-rails'
 gem 'simple_form', '~> 5.0', '>= 5.0.1'
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'activestorage', '~> 6.0', '>= 6.0.1'
