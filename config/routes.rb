@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products
   devise_for :users, path: '', path_names: {
     # changes devise path name to custom name (e.g. '/users/sign_up' => '/signup')
     sign_up: 'signup', sign_in: 'login', sign_out: 'logout'
