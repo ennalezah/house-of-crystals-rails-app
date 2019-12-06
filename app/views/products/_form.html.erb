@@ -1,0 +1,8 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.input :name, required: true %>
+  <%= f.input :price, required: true %>
+  <%= f.input :description, required: true %>
+  <%= f.input_field :color, collection: Product::COLOR, prompt: 'Select color', required: true %>
+
+  <%= f.submit(@product.new_record? ? 'Add Item' : 'Update') %>
+<% end %>
