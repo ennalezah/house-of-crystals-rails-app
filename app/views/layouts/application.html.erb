@@ -21,7 +21,7 @@
   <body>
     <nav>      
       <% if current_user %>
-        <%= link_to 'Edit account', edit_user_registration_path %> | 
+        <%= link_to 'Add a product', new_product_path %> | 
         <%= link_to 'Edit account', edit_user_registration_path %> | 
         <%= link_to 'Log out', destroy_user_session_path, method: :delete %>
       <% else %>
@@ -33,7 +33,7 @@
     <div class ="container">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-    </div >    
+    </div > 
     
     <div class="container">
       <%= yield %>
